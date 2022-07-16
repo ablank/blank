@@ -3,8 +3,8 @@
   h2 {
     margin: 0.4em 0;
     padding: 1em;
-    color: $color-1-bg;
-    background: $color-hilight;
+    color: $c1-bg;
+    background: $ch;
 
     &:after {
       position: absolute;
@@ -13,7 +13,7 @@
       width: 0;
       height: 0;
       content: " ";
-      border-top: 0.6em solid $color-hilight;
+      border-top: 0.6em solid $ch;
       border-right: 0.6em solid transparent;
       border-left: 0.6em solid transparent;
     }
@@ -33,7 +33,7 @@ a[id^="comment-"] {
   padding: 0 0 0 1em;
 
   .comment {
-    background-color: darken($color-1-bg, 10%);
+    background-color: darken($c1-bg, 10%);
   }
 }
 
@@ -45,19 +45,19 @@ a[id^="comment-"] {
   margin: 0.1em auto 0.4em;
   text-align: left;
   border: 1px $color-neutral solid;
-  background-color: darken($color-1-bg, 3%);
+  background-color: darken($c1-bg, 3%);
 
   &.new {
     border-color: $color-error;
   }
 
   .post-info {
-    background-color: darken($color-2, 10%);
+    background-color: darken($c2, 10%);
   }
   .links.inline {
     display: block;
     margin: 0.4em -1em -1em;
-    background-color: darken($color-2, 20%);
+    background-color: darken($c2, 20%);
     font-size: 0.8em;
   }
 }
@@ -72,8 +72,8 @@ a[id^="comment-"] {
 
 .comment-title {
   margin: 0;
-  color: $color-2;
-  background-color: $color-2;
+  color: $c2;
+  background-color: $c2;
   font-size: $size-big;
 
   &:after {

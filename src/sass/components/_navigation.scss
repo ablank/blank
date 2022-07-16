@@ -27,7 +27,7 @@
       color: $color-neutral;
       border: none;
       border-radius: unset;
-      background: $color-1-bg;
+      background: $c1-bg;
       box-shadow: $color-neutral 0 0.1em 0.25em;
       font-family: $h-font;
       font-size: $default-size;
@@ -38,8 +38,8 @@
       &:active,
       &.active {
         text-decoration: none;
-        color: $color-1-bg;
-        background: $color-hilight;
+        color: $c1-bg;
+        background: $ch;
       }
     }
   }
@@ -60,7 +60,7 @@
       right: 0;
       bottom: 0;
       &:hover {
-        @include triangle(0.8em, 0.6em, $color-hilight, "down");
+        @include triangle(0.8em, 0.6em, $ch, "down");
       }
     }
   }
@@ -86,8 +86,8 @@
       margin: 0;
       color: $color-neutral;
       border: none;
-      background: darken($color-1-bg, 5%);
-      background: rgba(darken($color-1-bg, 5%), 0.9);
+      background: darken($c1-bg, 5%);
+      background: rgba(darken($c1-bg, 5%), 0.9);
 
       &.active {
         overflow: visible;
@@ -117,7 +117,7 @@
         @include triangle(
           0.8em,
           0.6em,
-          $color-hilight,
+          $ch,
           $nav-dropdown-direction
         );
       }

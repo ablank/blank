@@ -12,14 +12,14 @@ html {
 
 body {
   color: $p-color;
-  background: $color-1-bg;
+  background: $c1-bg;
   font-family: $p-font;
   font-size: 100%;
   line-height: $p-line-height;
   text-rendering: optimizelegibility;
   text-size-adjust: 100%;
 
-  /* @include $color-hilight('rad', $color-1-bg, $color-1-bg, $color-2); */
+  /* @include $ch('rad', $c1-bg, $c1-bg, $c2); */
 
   /* background-image: $body_img; */
 

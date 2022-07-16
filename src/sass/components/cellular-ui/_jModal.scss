@@ -11,8 +11,8 @@
   bottom: 0;
   left: 0;
   opacity: 0;
-  background: $color-1;
-  background: rgba($color-1, 0.7);
+  background: $c1;
+  background: rgba($c1, 0.7);
   &.active {
     z-index: 99;
     opacity: 1;
@@ -47,13 +47,13 @@
   padding: 1em;
   border: $color-neutral 1px solid;
   border-radius: 50%;
-  background: $color-1-bg;
+  background: $c1-bg;
   &.active {
     border-radius: $size-nano;
     .jModal-close {
       width: 1em;
       height: 1em;
-      border: 0.1em solid $color-1-bg;
+      border: 0.1em solid $c1-bg;
       background: $color-error;
     }
   }

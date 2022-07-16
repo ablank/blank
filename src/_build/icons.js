@@ -54,45 +54,44 @@ const processIcon = async (imagepath, name) => {
 };
 
 // Process favicon
-(() => {
+const processFavicons = () => {
   const src = path.join(srcdir, 'favicons', 'favicon.svg');
-  const apple = [57, 72, 114, 144];
+  const appleIcons = [57, 72, 114, 144];
   const favicon = [16, 32];
   const pngOpts = {};
 
-  apple.map((size) => {
+  appleIcons.map((size) => {
     sharp(src)
       .resize(size)
       .png(pngOpts)
       .toFile(path.join(distFaviconDir, `apple-touch-icon-${size}.png`))
+      .then(console.log(`apple-touch-icon-${size}.png created\n`))
       .catch((e) => err(e));
+  });
 
-    return;
-});
+  favicon.map((size) => {
+    sharp(src)
+      .resize(size)
+      .png(pngOpts)
+      .toFile(path.join(distFaviconDir, `favicon-${size}.png`))
+      .then(console.log(`favicon-${size}.png created\n`))
+      .catch((e) => err(e));
+  });
 
-favicon.map((size) => {
   sharp(src)
-    .resize(size)
+    .resize(16)
     .png(pngOpts)
-    .toFile(path.join(distFaviconDir, `favicon-${size}.png`))
+    .toFile(path.join(distFaviconDir, 'favicon.ico'))
+    .then(console.log('favicon.ico created\n'))
     .catch((e) => err(e));
-
-    return;
-});
-
-sharp(src)
-  .resize(16)
-  .png(pngOpts)
-  .toFile(path.join(distFaviconDir, 'favicon.ico'))
-  .catch((e) => err(e));
-
-console.log('\nfavicons created\n');
-}) ();
+};
 
 // Process icons
 (() => {
   const src = path.join(srcdir, 'icons', 'svg');
-
+  // Process favicons
+  processFavicons();
+  // Process icons
   fs.readdir(src, (e, files) => {
     files.forEach((svg) => {
       processIcon(src, svg);

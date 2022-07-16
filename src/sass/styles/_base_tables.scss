@@ -3,7 +3,7 @@
   * Tables
 */
 $table_border: $color-neutral 1px solid;
-$cell_border: $color-2 1px solid;
+$cell_border: $c2 1px solid;
 
 table {
   margin: 0 auto;
@@ -18,7 +18,7 @@ table {
 th,
 thead {
   text-align: center;
-  color: $color-2;
+  color: $c2;
   border: $cell_border;
   font-family: $h-font;
   font-size: $default-size;
@@ -26,11 +26,11 @@ thead {
 }
 
 tr:nth-child(even) {
-  background: darken($color-1-bg, 5%);
+  background: darken($c1-bg, 5%);
 }
 
 tr:nth-child(odd) {
-  background: $color-1-bg;
+  background: $c1-bg;
 }
 
 td {

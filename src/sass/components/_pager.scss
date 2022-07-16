@@ -19,12 +19,12 @@
   }
 
   a {
-    @include button($color-2-bg, $color-2-bg);
+    @include button($c2-bg, $c2-bg);
 
     &:hover,
     &:focus {
-      color: $color-1-bg;
-      background: $color-1;
+      color: $c1-bg;
+      background: $c1;
     }
   }
 
@@ -36,10 +36,10 @@
     margin: -0.5em 0.6em 0;
     padding: $default-size;
     cursor: default;
-    color: $color-2;
+    color: $c2;
     border: $default-border;
     outline: 0;
-    background: $color-1-bg;
+    background: $c1-bg;
     font-weight: bold;
   }
 }

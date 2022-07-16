@@ -9,17 +9,17 @@
 }
 
 .textShadow {
-  text-shadow: 1px 1px 3px $color-2;
+  text-shadow: 1px 1px 3px $c2;
 }
 
 /* Page curl effect */
 .box-shadow {
-  @include box-shadow(inset 0 0 0.3em 0 $color-2);
+  @include box-shadow(inset 0 0 0.3em 0 $c2);
 
   /* max-width: 720px; // constrain width to prevent pseudo elements from showing outside of box */
   margin: 0 auto;
   padding: 3em 1.4em;
-  background-color: $color-1-bg;
+  background-color: $c1-bg;
 
   &:before,
   &:after {
@@ -32,7 +32,7 @@
     content: " ";
     transform: skew(-5deg) rotate(-5deg);
     background: transparent;
-    box-shadow: 0 6px 12px rgba($color-2, 0.3);
+    box-shadow: 0 6px 12px rgba($c2, 0.3);
   }
 
   &:after {
@@ -45,13 +45,13 @@
 /* Pseudo 3-d elements */
 
 .ribbon {
-  @include ribbon(1.2em, 1em, $color-1);
+  @include ribbon(1.2em, 1em, $c1);
 
-  color: $color-1-bg;
+  color: $c1-bg;
 }
 
 .popout {
-  @include popout(1.2em, 1em, $color-1);
+  @include popout(1.2em, 1em, $c1);
 
-  color: $color-1-bg;
+  color: $c1-bg;
 }

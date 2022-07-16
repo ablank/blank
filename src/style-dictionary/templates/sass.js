@@ -13,9 +13,7 @@
 // express or implied. See the License for the specific language governing
 // permissions and limitations under the License.
 
-var cellular = allProperties;
-
-var showFileHeader = (this.options && this.options.hasOwnProperty('showFileHeader')) ? this.options.showFileHeader : true;
+const showFileHeader = (this.options && this.options.hasOwnProperty('showFileHeader')) ? this.options.showFileHeader : true;
 if (showFileHeader) {
   var header = '';
   header += "/*\n  DO NOT EDIT DIRECTLY";
@@ -27,9 +25,9 @@ if (showFileHeader) {
 
 print('\n');
 
-var output = '';
-output += cellular.map(function (prop) {
-  var line = '';
+let output = '';
+output += allProperties.map(function (prop) {
+  let line = '';
   if (prop.comment) {
     line += '  // ' + prop.comment + '\n';
   }

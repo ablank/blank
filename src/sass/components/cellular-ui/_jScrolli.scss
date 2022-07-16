@@ -107,15 +107,15 @@ $width: 800px;
     a:visited {
       @include textstroke($panel_background, 1px);
 
-      color: $color-2;
+      color: $c2;
       font-weight: bold;
     }
     a:active,
     a:hover,
     a:focus {
-      @include textstroke($color-hilight, 2px);
+      @include textstroke($ch, 2px);
 
-      color: $color-2;
+      color: $c2;
     }
   }
 
@@ -141,8 +141,8 @@ $width: 800px;
   bottom: 1em;
   left: 0;
   padding: 0 2em;
-  background-color: $color-1;
-  background-color: rgba($color-1, 0.8);
+  background-color: $c1;
+  background-color: rgba($c1, 0.8);
 
   p {
     @include scrolli_transit();
@@ -151,7 +151,7 @@ $width: 800px;
     margin: 0;
     padding: 0.8em;
     opacity: 1;
-    color: $color-1-bg;
+    color: $c1-bg;
   }
 }
 
@@ -165,7 +165,7 @@ $width: 800px;
   cursor: pointer;
   text-indent: -999em;
   opacity: 0.2;
-  color: $color-1-bg;
+  color: $c1-bg;
 
   /* background-size: $controlsize; */
   background-color: $color-neutral;
@@ -180,7 +180,7 @@ $width: 800px;
 
     &:hover,
     &:focus {
-      background-color: $color-hilight;
+      background-color: $ch;
     }
   }
 
@@ -200,9 +200,9 @@ $width: 800px;
     left: 0;
     transition: none;
     opacity: 0;
-    border: $color-1-bg 2px solid;
+    border: $c1-bg 2px solid;
     border-radius: 50%;
-    background-color: $color-1;
+    background-color: $c1;
   }
 
   &.play {
@@ -246,19 +246,19 @@ $width: 800px;
   /* float: left; */
   cursor: pointer;
   text-indent: -999em;
-  border: $color-2 1px solid;
+  border: $c2 1px solid;
   border-radius: 50%;
   background-color: $color-neutral;
 
   &.active {
-    border-color: darken($color-hilight, 20%);
-    background-color: $color-hilight;
-    box-shadow: 0 0 0.5em 0 $color-hilight;
+    border-color: darken($ch, 20%);
+    background-color: $ch;
+    box-shadow: 0 0 0.5em 0 $ch;
   }
 
   &:hover,
   &:focus {
-    border-color: $color-hilight;
+    border-color: $ch;
   }
 
   a {

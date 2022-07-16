@@ -1,6 +1,6 @@
 @mixin button(
-  $color: $color-hilight,
-  $background: $color-1-bg,
+  $color: $ch,
+  $background: $c1-bg,
   $style: "flat"
 ) {
   /* 'flat' || 'bevel' */
@@ -39,7 +39,7 @@
       } @else {
         @include box-shadow($background2 0 0.1em 0.4em);
 
-        border-color: $color-hilight;
+        border-color: $ch;
       }
     }
 

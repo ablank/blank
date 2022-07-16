@@ -54,13 +54,13 @@
       max-width: $size + unquote("%");
       margin: auto;
     } @else {
-      width: $size - $cell_space + unquote("%");
+      width: $size - $cell-space + unquote("%");
     }
   }
 
   @if ($grid-flex == false) {
     .offset-#{$name} {
-      margin-left: $size + ($cell_space / 2) + unquote("%");
+      margin-left: $size + ($cell-space / 2) + unquote("%");
     }
   }
 }
@@ -85,11 +85,11 @@
 @include mediaquery($mediaquery-small) {
   /* Set all cells to single-column */
   #{$cells} {
-    width: 100% - $cell_space;
+    width: 100% - $cell-space;
 
     @if ($grid-flex) {
-      flex-basis: 100% - $cell_space;
-      max-width: 100% - $cell_space;
+      flex-basis: 100% - $cell-space;
+      max-width: 100% - $cell-space;
     }
   }
   #{$offsets} {

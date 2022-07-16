@@ -34,7 +34,7 @@ $_logo-width: calc($logo-width + $logo-padding);
 
     &:focus,
     &:hover {
-      box-shadow: 0 0 0.4em 0 $color-hilight;
+      box-shadow: 0 0 0.4em 0 $ch;
     }
   }
 }

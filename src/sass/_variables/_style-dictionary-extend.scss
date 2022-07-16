@@ -14,7 +14,7 @@ $c3-bg: $color-tertiary-bg;
 
 /* Variable extensions */
 $c1-light: lighten($c1, 10%);
-$c1-dark: darken($color-1, 10%);
+$c1-dark: darken($c1, 10%);
 
 $c2-light: lighten($c1, 10%);
 $c2-dark: darken($c1, 10%);
@@ -22,8 +22,8 @@ $c2-dark: darken($c1, 10%);
 $c3-light: lighten($c1, 10%);
 $c3-dark: darken($c1, 10%);
 
-$ch-light: lighten($ch1, 15%);
-$ch-dark: lighten($ch1, 5%);
+$ch-light: lighten($ch, 15%);
+$ch-dark: lighten($ch, 5%);
 
 /* Cell grid spacing- % will be appended */
 $cell-space: calc(($grid-cell-margin + $grid-cell-padding) * 2);

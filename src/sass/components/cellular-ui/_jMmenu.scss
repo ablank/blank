@@ -28,18 +28,18 @@
     height: 3em;
     padding: 0;
     cursor: pointer;
-    border: 2px solid $color-1;
-    background-color: $color-1-bg;
+    border: 2px solid $c1;
+    background-color: $c1-bg;
     background-image: url("../assets/icons/png/menu.png");
     background-image: url("../assets/icons/svg/menu.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 9em;
-    box-shadow: 0 0 0 0 $color-1-bg;
+    box-shadow: 0 0 0 0 $c1-bg;
     will-change: background-position, box-shadow;
     &:focus,
     &:hover {
-      box-shadow: 0 0 0.2em 0.1em $color-hilight;
+      box-shadow: 0 0 0.2em 0.1em $ch;
     }
     &.active {
       /* Shift background to indicate state. */
@@ -75,7 +75,7 @@
     overflow: hidden;
     margin: 0;
     transform: translate3d(0, 0, 0);
-    background-color: rgba($color-1-bg, 0.7);
+    background-color: rgba($c1-bg, 0.7);
     li {
       display: block;
       max-width: none;
@@ -86,7 +86,7 @@
           cursor: pointer;
         }
         &:after {
-          @include triangle(0.8em, 0.6em, $color-2, "down");
+          @include triangle(0.8em, 0.6em, $c2, "down");
           @include transition();
 
           top: 1em;
@@ -95,7 +95,7 @@
         &.active:after,
         &:focus:after,
         &:hover:after {
-          @include triangle(0.8em, 0.6em, $color-hilight, "down");
+          @include triangle(0.8em, 0.6em, $ch, "down");
 
           transform: rotateY(180deg);
         }
@@ -108,7 +108,7 @@
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.25s;
-        border: $color-2 1px solid;
+        border: $c2 1px solid;
         border-radius: 0.8em;
       }
       &.active {
@@ -127,9 +127,9 @@
         height: 1em;
         padding: 0.6em 1em 0.8em;
         text-decoration: none;
-        color: $color-2;
+        color: $c2;
         border-bottom: 1px solid;
-        background-color: $color-1-bg;
+        background-color: $c1-bg;
         background-image: none;
         font-family: $h-font;
         font-size: 0.9em;
@@ -138,13 +138,13 @@
       &:active,
       &:focus,
       &:hover {
-        color: $color-hilight;
-        background-color: $color-1-bg;
+        color: $ch;
+        background-color: $c1-bg;
       }
     }
     .active > a {
-      color: $color-hilight;
-      background-color: $color-1-bg;
+      color: $ch;
+      background-color: $c1-bg;
     }
     ul {
       /* Styling for nested menus. */

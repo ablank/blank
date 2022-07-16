@@ -7,19 +7,19 @@ a {
   @include transition();
 
   text-decoration: none;
-  color: $ch1;
+  color: $ch;
   outline: none;
   background-repeat: no-repeat;
 
   &:visited {
-    color: $ch3;
+    color: $ch-dark;
   }
 
   &:hover,
   &:active,
   &:focus {
     text-decoration: underline;
-    color: $ch2;
+    color: $ch-light;
     outline: none;
   }
 }

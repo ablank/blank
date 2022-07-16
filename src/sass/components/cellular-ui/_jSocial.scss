@@ -12,7 +12,7 @@ $icon_size: 1.4em;
   margin: 1em 0 0 0;
   padding: 1em;
   border-radius: 0.4em;
-  background-color: $color-1-bg;
+  background-color: $c1-bg;
 
   .title {
     margin: 0;
@@ -28,13 +28,13 @@ $icon_size: 1.4em;
     text-indent: -999em;
     border: 1px solid $color-neutral;
     border-radius: 50%;
-    background-color: $color-2;
+    background-color: $c2;
     background-position: center center;
     background-size: $icon_size;
 
     &:hover {
-      background-color: $color-1-bg;
-      /* $color-1-bg; */
+      background-color: $c1-bg;
+      /* $c1-bg; */
     }
 
     @each $icon in $social_icons {
@@ -44,7 +44,7 @@ $icon_size: 1.4em;
       }
     }
 
-    /* $color-1-bg; */
+    /* $c1-bg; */
   }
 
   &.horizontal,

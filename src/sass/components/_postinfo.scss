@@ -16,9 +16,9 @@
   float: left;
   margin: 1em 1em 1em 0;
   text-align: center;
-  color: $color-2;
-  border: $color-2 $default-border-style;
-  background: lighten($color-2, 10%);
+  color: $c2;
+  border: $c2 $default-border-style;
+  background: lighten($c2, 10%);
 
   @include border-radius(0.2em);
 
@@ -41,9 +41,9 @@
   .year {
     clear: both;
     padding: 0.2em 0.8em;
-    color: $color-2;
-    border-top: $color-1 $default-border-style;
-    background-color: $color-2-bg;
+    color: $c2;
+    border-top: $c1 $default-border-style;
+    background-color: $c2-bg;
   }
 }
 

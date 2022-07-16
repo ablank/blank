@@ -7,7 +7,7 @@
   height: 2em;
   margin: 0 0 2em 0;
   padding: 0.1em 5%;
-  background: $color-2;
+  background: $c2;
 
   li {
     display: inline;
@@ -15,7 +15,7 @@
     margin: 0 0 0 0.4em;
     padding: 0 0 0 1.4em;
     list-style: none;
-    color: lighten($color-2, 20%);
+    color: lighten($c2, 20%);
     background-image: url(../assets/icons/min/png/arrow-right.png);
     background-repeat: no-repeat;
     background-position: left center;
@@ -23,7 +23,7 @@
     line-height: 2em;
 
     a {
-      color: $color-2-bg;
+      color: $c2-bg;
     }
 
     &.first {

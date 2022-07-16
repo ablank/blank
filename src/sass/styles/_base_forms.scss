@@ -64,7 +64,7 @@ legend {
   top: -1em;
   padding: 0 $size-small;
   color: $color-neutral;
-  background: $color-1-bg;
+  background: $c1-bg;
   font-family: $h-font;
   font-size: $size-big;
   font-weight: $h-weight;
@@ -97,15 +97,15 @@ textarea {
   text-indent: $i_pad;
   color: $p-color;
   border: $color-neutral 1px solid;
-  background: darken($color-1-bg, 1%);
+  background: darken($c1-bg, 1%);
   font: 1em/1.6em $p-font;
   font-size: 100%;
 
   &:focus {
     color: $p-color;
     outline: none;
-    background: $color-1-bg;
-    box-shadow: 0 0 0.2em 0 $color-hilight;
+    background: $c1-bg;
+    box-shadow: 0 0 0.2em 0 $ch;
   }
 
   &.year,
@@ -132,7 +132,7 @@ select {
 }
 
 optgroup {
-  background: darken($color-1-bg, 5%);
+  background: darken($c1-bg, 5%);
 }
 
 option {
@@ -146,7 +146,7 @@ option {
 input {
   &.required,
   &[required] {
-    box-shadow: 0 0 0.1em 0 $color-hilight;
+    box-shadow: 0 0 0.1em 0 $ch;
 
     &:after {
       /* content: ' *'; */

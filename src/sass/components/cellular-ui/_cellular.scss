@@ -5,11 +5,11 @@
 */
 
 /* Variables specific to UI */
-$title_color: $color-1-bg;
-$title_background: $color-2;
-$panel_color: $color-2;
-$panel_background: $color-1-bg;
-$active_color: darken($color-hilight, 10%);
+$title_color: $c1-bg;
+$title_background: $c2;
+$panel_color: $c2;
+$panel_background: $c1-bg;
+$active_color: darken($ch, 10%);
 $border_color: $color-neutral;
 $border_width: 1px;
 $border_radius: 0.5em;

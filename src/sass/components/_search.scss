@@ -13,8 +13,8 @@ form.site-search {
   text-align: right;
   border: $color-neutral 1px solid;
   border-radius: $br;
-  background-color: $color-2;
-  background-color: rgba($color-2, 0.6);
+  background-color: $c2;
+  background-color: rgba($c2, 0.6);
   font-size: 0.8em;
 
   .container-inline {
@@ -35,14 +35,14 @@ form.site-search {
       color: $color-neutral;
       border-bottom: $color-neutral 0.1em solid;
       border-radius: $br;
-      background: rgba($color-1-bg, 0.4);
+      background: rgba($c1-bg, 0.4);
       line-height: 1em;
 
       &:hover,
       &:active,
       &:focus {
-        color: $color-1;
-        border-color: $color-hilight;
+        color: $c1;
+        border-color: $ch;
         outline: none;
       }
     }
@@ -51,7 +51,7 @@ form.site-search {
       float: none;
       padding: 0 1.4em 0 0.2em;
       border: $color-neutral 1px solid;
-      background: $color-2 url("../assets/icons/png/search.png") center right
+      background: $c2 url("../assets/icons/png/search.png") center right
         no-repeat;
       background-image: url("../assets/icons/svg/search.svg");
       background-size: 1.4em;
@@ -59,9 +59,9 @@ form.site-search {
       &:hover,
       &:active,
       &:focus {
-        border-color: $color-hilight;
+        border-color: $ch;
         outline: none;
-        background-color: darken($color-2, 8%);
+        background-color: darken($c2, 8%);
       }
     }
   }

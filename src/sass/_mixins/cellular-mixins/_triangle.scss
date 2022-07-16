@@ -1,7 +1,7 @@
 @mixin triangle(
   $width: $default-size,
   $height: $default-size,
-  $color: $color-1,
+  $color: $c1,
   $direction: "left"
 ) {
   position: absolute;

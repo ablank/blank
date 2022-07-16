@@ -26,7 +26,7 @@
   a,
   a:visited {
     text-decoration: underline;
-    color: $color-hilight;
+    color: $ch;
 
     &:after {
       content: " (" attr(href) ")";
@@ -39,7 +39,7 @@
   pre,
   code,
   blockquote {
-    border: 1px solid $color-2;
+    border: 1px solid $c2;
     page-break-inside: avoid;
   }
 

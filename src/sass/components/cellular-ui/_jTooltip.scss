@@ -13,10 +13,10 @@ $btn_size: 2em; /*  */
   height: $btn_size;
   cursor: cell;
   vertical-align: middle;
-  color: $color-1-bg;
+  color: $c1-bg;
   border: 1px solid $color-neutral;
   border-radius: 50%;
-  background-color: $color-2;
+  background-color: $c2;
 }
 .jTooltip-tooltip {
   @include transition();
@@ -29,12 +29,12 @@ $btn_size: 2em; /*  */
   margin: 0;
   padding: 0;
   opacity: 0;
-  color: $color-1-bg;
+  color: $c1-bg;
   border-radius: $size-nano;
   border-top-left-radius: 0;
-  background-color: rgba($color-1, 0.9);
+  background-color: rgba($c1, 0.9);
   &:after {
-    @include triangle(1em, 1em, rgba($color-1, 0.9), "left");
+    @include triangle(1em, 1em, rgba($c1, 0.9), "left");
 
     z-index: -1;
     top: 0;

@@ -18,14 +18,6 @@
           "format": "json/flat",
           "destination": "js/style-dictionary.json"
         }] 
-    },
-    "yaml": {
-      "transformGroup": "yaml",
-      "buildPath": "src/",
-      "files": [{
-          "format": "yaml",
-          "destination": "sass/_variables/_style-dictionary.scss"
-        }]
     }
   }
 }

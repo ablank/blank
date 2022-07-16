@@ -1,4 +1,4 @@
-@mixin popout($width: $default-size, $height: $default-size, $color: $color-1) {
+@mixin popout($width: $default-size, $height: $default-size, $color: $c1) {
   position: relative;
   margin: 0 0 $height;
   padding: 0 $width;

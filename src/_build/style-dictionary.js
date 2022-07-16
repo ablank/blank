@@ -16,23 +16,8 @@ StyleDictionary.registerFormat({
   name: 'sass',
   formatter: _.template(
     fs.readFileSync(path.resolve(dirDictionary, 'templates', 'sass.js')),
-  )
-});
-
-StyleDictionary.registerFormat({
-  name: 'yaml',
-  formatter: _.template(
-    fs.readFileSync(path.resolve(dirDictionary, 'templates', 'yaml.js')),
   ),
 });
-
-/**
- * registerFilter
-StyleDictionary.registerFilter({
-  name: 'info',
-  matcher: (prop) => prop.attributes.category === 'info'
-});
- */
 
 /**
  * registerTransformGroup
@@ -42,10 +27,20 @@ StyleDictionary.registerTransformGroup({
   transforms: StyleDictionary.transformGroup['scss'].concat([]),
 });
 
+
+/*
+StyleDictionary.registerFormat({
+  name: 'yaml',
+  formatter: _.template(
+    fs.readFileSync(path.resolve(dirDictionary, 'templates', 'yaml.js')),
+  ),
+});
+
  StyleDictionary.registerTransformGroup({
   name: 'yaml',
   transforms: ['name/cti/snake', 'attribute/cti'],
 });
+*/
 
 /**
  * Build

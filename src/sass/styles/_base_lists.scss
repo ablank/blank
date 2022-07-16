@@ -44,10 +44,10 @@ ol {
       content: counter(olCount);
       counter-increment: olCount;
       text-align: center;
-      color: $color-2;
+      color: $c2;
       border: thin solid;
       border-radius: 50%;
-      background: $color-1-bg;
+      background: $c1-bg;
       line-height: 1.4em;
     }
   }
