@@ -1,378 +1,136 @@
-
-
-default_unit: rem 
-
-
-default_size: 1rem 
-
-
-default_color: #101010 
-
-
-default_background: #fefefe 
-
-
-default_font_family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif 
-
-
-default_font_size: 1rem 
-
-
-default_font_weight: 500 
-
-
-default_font_weight_lighter: 500 
-
-
-default_font_weight_bold: 700 
-
-
-default_font_weight_bolder: 900 
-
-
-default_line_height: 1.4em 
-
-
-default_border: 1px solid #fefefe 
-
-
-default_border_style: 1px solid 
-
-
-default_border_radius: 0.5rem 
-
-
-default_image: happy 
-
-
-default_offset: inset 0 0 0.3em 0 #555 
-
-
-default_transition_property: all 
-
-
-default_transition_duration: 1s 
-
-
-default_transition_timing: ease 
-
-
-default_transition_delay: false 
-
-
-default_box_shadow: 0.5rem 0.5rem 0.5rem 1px #101010; 
-
-
-default_drop_shadow: 0.5rem 0.5rem 0.5rem 0.5rem #101010; 
-
-
-adjust_default: 25% 
-
-
-adjust_abit: 10% 
-
-
-adjust_bigly: 40% 
-
-
-opacity: 0.3 
-
-
-alpha_start: 0 
-
-
-alpha_end: 1 
-
-
-alpha_offset: 0.2 
-
-
-animation_speed: 500ms 
-
-
-animation_easing: ease 
-
-
-region_header_position: fixed 
-
-
-region_header_height: 96px 
-
-
-region_sidebar_width: 27% 
-
-
-region_margin: 0 
-
-
-region_padding: 0 
-
-
-region_border: 0 
-
-
-region_min_height: 3rem 
-
-
-color_primary: #101010 
-
-
-color_primary_bg: #fefefe 
-
-
-color_secondary: #fefefe 
-
-
-color_secondary_bg: #555 
-
-
-color_tertiary: #555 
-
-
-color_tertiary_bg: #fffbf0 
-
-
-color_hilight: #29b4de 
-
-
-color_shadow: #555 
-
-
-color_neutral: #bbbab7 
-
-
-color_error: #8c0d00 
-
-
-color_warning: #ec2 
-
-
-color_success: #61d43f 
-
-
-button_border_size: 0.1rem 
-
-
-button_border_radius: 0.5rem 
-
-
-button_font_size: 1rem 
-
-
-button_font_family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif 
-
-
-button_font_weight: 500 
-
-
-icon_src_svg: '../assets/icons/svg/' 
-
-
-icon_src_png: '../assets/icons/png/' 
-
-
-icon_size: 1rem 
-
-
-icon_bg: #fefefe 
-
-
-icon_border: 1px solid #fefefe 
-
-
-icon_border_radius: 50% 
-
-
- # List of icons/classes to actually include in style
-icon_list: arrow-up,arrow-right,arrow-down,arrow-left,mail,menu,message-error,message-ok,message-warning,email,home,search,facebook,instagram,twitter,twitter-t,github-octo,google,youtube,linkedin,reddit 
-
-
-list_margin: 1em 
-
-
-list_padding: 0.5em 
-
-
-list_style_ul: disc 
-
-
-list_style_ul_img: arrow-right 
-
-
-list_style_ol: none 
-
-
-nav_position: 0.1rem 
-
-
-nav_size: 1rem 
-
-
-nav_dropdown_show: true 
-
-
-nav_dropdown_direction: left 
-
-
-table_margin: 1em 
-
-
-table_padding: 0.5em 
-
-
-distance_start: 0 
-
-
-distance_end: 1rem 
-
-
-distance_offset: 10% 
-
-
- # true for flex-box, false for standard box model
-grid_flex: true 
-
-
- # A key:value list of cell sizes to set grid scaling as % of parent element
-grid_cells: 100,90,80,75,70,66.666666,60,50,40,33.333333,30,25,20,10 
-
-
- # Single value margin size that will be applied to grid cells
-grid_cell_margin: 0 
-
-
- # Single value padding size that will be applied to grid cells
-grid_cell_padding: 0 
-
-
- # Single value padding size that will be applied to grid cells
-grid_cell_max_width: 72em 
-
-
-logo_unit: px 
-
-
-logo_width: 96px 
-
-
-logo_height: 96px 
-
-
-logo_margin: 0px 
-
-
-logo_padding: 0px 
-
-
-logo_border_size: 1px 
-
-
-logo_png: '../assets/images/logo.png' 
-
-
-logo_svg: '../assets/images/logo.svg' 
-
-
-mediaquery_small: '(max-width: 500px)' 
-
-
-mediaquery_narrow: '(min-width: 500px) and (max-width: 960px)' 
-
-
-mediaquery_default: '(min-width: 960px) and (max-width: 1600px)' 
-
-
-mediaquery_large: '(min-width: 1600px)' 
-
-
-mediaquery_retina: 'screen and (min-resolution: 192dpi) and (min-resolution: 2dppx)' 
-
-
-offset_h: 0 
-
-
-offset_v: 0 
-
-
-offset_spread: 1px 
-
-
-scale_start: 0 
-
-
-scale_mid: 0.6 
-
-
-scale_end: 1 
-
-
-size_default: 1rem 
-
-
-size_nano: 0.25rem 
-
-
-size_tiny: 0.5rem 
-
-
-size_small: 0.7rem 
-
-
-size_big: 1.4rem 
-
-
-size_large: 1.4rem 
-
-
-size_xl: 3rem 
-
-
-size_xxl: 15rem 
-
-
-speed: 500ms 
-
-
-fast: 250ms 
-
-
-slow: 1s 
-
-
-h_font: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif 
-
-
-h_size: 3rem 
-
-
-h_line_height: 3rem 
-
-
-h_weight: bold 
-
-
-h_color: #101010 
-
-
-h_color_bg: #fefefe 
-
-
-p_font: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif 
-
-
-p_size: 1rem 
-
-
-p_line_height: 3rem 
-
-
-p_max_width: 32em 
-
-
-p_weight: 500 
-
-
-p_color: #101010 
-
-
-p_color_bg: #fefefe 
+/*
+  DO NOT EDIT DIRECTLY
+  @see src/style-dictionary/variables/
+  Generated on Sat, 16 Jul 2022 19:12:24 GMT
+*/
+
+$default-unit: rem;
+$default-size: 1rem;
+$default-color: #101010;
+$default-background: #fefefe;
+$default-font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+$default-font-size: 1rem;
+$default-font-weight: 500;
+$default-font-weight-lighter: 500;
+$default-font-weight-bold: 700;
+$default-font-weight-bolder: 900;
+$default-line-height: 1.4em;
+$default-border: 1px solid #fefefe;
+$default-border-style: 1px solid;
+$default-border-radius: 0.5rem;
+$default-image: happy;
+$default-offset: inset 0 0 0.3em 0 #555;
+$default-transition-property: all;
+$default-transition-duration: 1s;
+$default-transition-timing: ease;
+$default-transition-delay: false;
+$default-box-shadow: 0.5rem 0.5rem 0.5rem 1px #101010;;
+$default-drop-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #101010;;
+$adjust-default: 25%;
+$adjust-abit: 10%;
+$adjust-bigly: 40%;
+$opacity: 0.3;
+$alpha-start: 0;
+$alpha-end: 1;
+$alpha-offset: 0.2;
+$animation-speed: 500ms;
+$animation-easing: ease;
+$region-header-position: fixed;
+$region-header-height: 96px;
+$region-sidebar-width: 27%;
+$region-margin: 0;
+$region-padding: 0;
+$region-border: 0;
+$region-min-height: 3rem;
+$color-primary: #101010;
+$color-primary-bg: #fefefe;
+$color-secondary: #fefefe;
+$color-secondary-bg: #555;
+$color-tertiary: #555;
+$color-tertiary-bg: #fffbf0;
+$color-hilight: #29b4de;
+$color-shadow: #555;
+$color-neutral: #bbbab7;
+$color-error: #8c0d00;
+$color-warning: #ec2;
+$color-success: #61d43f;
+$button-border-size: 0.1rem;
+$button-border-radius: 0.5rem;
+$button-font-size: 1rem;
+$button-font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+$button-font-weight: 500;
+$icon-src-svg: '../assets/icons/svg/';
+$icon-src-png: '../assets/icons/png/';
+$icon-size: 1rem;
+$icon-bg: #fefefe;
+$icon-border: 1px solid #fefefe;
+$icon-border-radius: 50%;
+  // List of icons/classes to actually include in style
+$icon-list: arrow-up,arrow-right,arrow-down,arrow-left,mail,menu,message-error,message-ok,message-warning,email,home,search,facebook,instagram,twitter,twitter-t,github-octo,google,youtube,linkedin,reddit;
+$list-margin: 1em;
+$list-padding: 0.5em;
+$list-style-ul: disc;
+$list-style-ul-img: arrow-right;
+$list-style-ol: none;
+$nav-position: 0.1rem;
+$nav-size: 1rem;
+$nav-dropdown-show: true;
+$nav-dropdown-direction: left;
+$table-margin: 1em;
+$table-padding: 0.5em;
+$distance-start: 0;
+$distance-end: 1rem;
+$distance-offset: 10%;
+  // true for flex-box, false for standard box model
+$grid-flex: true;
+  // A key:value list of cell sizes to set grid scaling as % of parent element
+$grid-cells: 100,90,80,75,70,66.666666,60,50,40,33.333333,30,25,20,10;
+  // Single value margin size that will be applied to grid cells
+$grid-cell-margin: 0;
+  // Single value padding size that will be applied to grid cells
+$grid-cell-padding: 0;
+  // Single value padding size that will be applied to grid cells
+$grid-cell-max-width: 72em;
+$logo-unit: px;
+$logo-width: 96px;
+$logo-height: 96px;
+$logo-margin: 0px;
+$logo-padding: 0px;
+$logo-border-size: 1px;
+$logo-png: '../assets/images/logo.png';
+$logo-svg: '../assets/images/logo.svg';
+$mediaquery-small: '(max-width: 500px)';
+$mediaquery-narrow: '(min-width: 500px) and (max-width: 960px)';
+$mediaquery-default: '(min-width: 960px) and (max-width: 1600px)';
+$mediaquery-large: '(min-width: 1600px)';
+$mediaquery-retina: 'screen and (min-resolution: 192dpi) and (min-resolution: 2dppx)';
+$offset-h: 0;
+$offset-v: 0;
+$offset-spread: 1px;
+$scale-start: 0;
+$scale-mid: 0.6;
+$scale-end: 1;
+$size-default: 1rem;
+$size-nano: 0.25rem;
+$size-tiny: 0.5rem;
+$size-small: 0.7rem;
+$size-big: 1.4rem;
+$size-large: 1.4rem;
+$size-xl: 3rem;
+$size-xxl: 15rem;
+$speed: 500ms;
+$fast: 250ms;
+$slow: 1s;
+$h-font: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+$h-size: 3rem;
+$h-line-height: 3rem;
+$h-weight: bold;
+$h-color: #101010;
+$h-color-bg: #fefefe;
+$p-font: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$p-size: 1rem;
+$p-line-height: 3rem;
+$p-max-width: 32em;
+$p-weight: 500;
+$p-color: #101010;
+$p-color-bg: #fefefe

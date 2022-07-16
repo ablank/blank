@@ -1,0 +1,43 @@
+/**
+* @file
+* Add derivatives of style-dictionary variables .
+*/
+
+/* Variable aliases */
+$ch: $color-hilight;
+$c1: $color-primary;
+$c1-bg: $color-primary-bg;
+$c2: $color-secondary;
+$c2-bg: $color-secondary-bg;
+$c3: $color-tertiary;
+$c3-bg: $color-tertiary-bg;
+
+/* Variable extensions */
+$c1-light: lighten($c1, 10%);
+$c1-dark: darken($color-1, 10%);
+
+$c2-light: lighten($c1, 10%);
+$c2-dark: darken($c1, 10%);
+
+$c3-light: lighten($c1, 10%);
+$c3-dark: darken($c1, 10%);
+
+$ch-light: lighten($ch1, 15%);
+$ch-dark: lighten($ch1, 5%);
+
+/* Cell grid spacing- % will be appended */
+$cell-space: calc(($grid-cell-margin + $grid-cell-padding) * 2);
+
+/* cells & offsets populated by looping through grid values. */
+$cells: (".cell");
+$offsets: ();
+
+/* Generate list of names used in grid classes based on % size specified in style-dictionary */
+@each $cell in $grid-cells {
+  $cell: round($cell);
+  $cells: append($cells, unquote(".cell-#{$cell}"), comma);
+  $offsets: append($offsets, unquote(".offset-#{$cell}"), comma);
+}
+
+/* Header region */
+$header-height: calc($logo-height + ($logo-padding * 2) + ($logo-margin * 2));
