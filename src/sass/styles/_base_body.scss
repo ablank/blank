@@ -1,0 +1,29 @@
+/**
+  * @file
+  * Base body style.
+*/
+
+html {
+  overflow: auto;
+
+  /* Force scrollbar display to prevent flicker on short pages. */
+  overflow-y: scroll;
+}
+
+body {
+  color: $p-color;
+  background: $color-1-bg;
+  font-family: $p-font;
+  font-size: 100%;
+  line-height: $p-line-height;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+
+  /* @include gradient('rad', $color-1-bg, $color-1-bg, $color-2); */
+
+  /* background-image: $body_img; */
+
+  /* background-repeat: repeat; */
+
+  /* background-attachment: fixed; */
+}

@@ -1,0 +1,18 @@
+@mixin uniquelinks($color-hilight: $color-hilight) {
+  /* Unique link styling */
+  &:nth-child(1) a {
+    border-color: darken($color-hilight, 10%);
+  }
+  &:nth-child(2) a {
+    border-color: darken($color-hilight, 20%);
+  }
+  &:nth-child(3) a {
+    border-color: darken($color-hilight, 30%);
+  }
+  &:nth-child(4) a {
+    border-color: darken($color-hilight, 40%);
+  }
+  &:nth-child(5) a {
+    border-color: darken($color-hilight, 50%);
+  }
+}

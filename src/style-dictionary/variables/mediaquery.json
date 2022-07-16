@@ -1,0 +1,24 @@
+{
+  "mediaquery": {
+    "small": {
+      "category": "mediaquery",
+      "value": "'(max-width: {breakpoint.small.ivalue}{breakpoint.unit.ivalue})'"
+    },
+    "narrow": {
+      "category": "mediaquery",
+      "value": "'(min-width: {breakpoint.small.ivalue}{breakpoint.unit.ivalue}) and (max-width: {breakpoint.narrow.ivalue}{breakpoint.unit.ivalue})'"
+    },
+    "default": {
+      "category": "mediaquery",
+      "value": "'(min-width: {breakpoint.narrow.ivalue}{breakpoint.unit.ivalue}) and (max-width: {breakpoint.default.ivalue}{breakpoint.unit.ivalue})'"
+    },
+    "large": {
+        "category": "mediaquery",
+        "value": "'(min-width: {breakpoint.default.ivalue}{breakpoint.unit.ivalue})'"
+    },
+    "retina": {
+        "category": "mediaquery",
+        "value": "'screen and (min-resolution: 192dpi) and (min-resolution: 2dppx)'"
+    }
+  }
+}

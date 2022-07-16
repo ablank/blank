@@ -1,0 +1,168 @@
+/**
+* Inspiration drwan from https://codepen.io/dyarfi/pen/QWbbmaG
+*/
+.card {
+  transition: 0.5s ease;
+  transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+  border: $default-border;
+  border-radius: 0;
+  background: $color-2-bg;
+  &-header {
+    border-radius: 0;
+  }
+  &-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &-header,
+  &-footer {
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    @include box-shadow();
+
+    transform: perspective(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    border-color: darken($color-warning, 0%);
+    .card-header,
+    .card-footer {
+      color: darken($color-warning, 15%);
+      border-color: darken($color-warning, 0%);
+      background-color: lighten($color-warning, 35%);
+    }
+    .promotion-promo {
+      transform: scale(1.175) translateY(2.5px);
+      transform-origin: left center;
+    }
+    .promotion-price {
+      transform: translate(2.5px, 17.5px) scale(1.15);
+      transform-origin: center right;
+    }
+  }
+  &-body {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2,
+  h3 {
+    color: $color-1-bg;
+    background-color: $color-1;
+
+    &.big {
+      margin: 0;
+      padding: 0.15rem 0;
+      transition: color 0.5s ease-in, border-color 0.5s ease-in-out;
+      text-transform: uppercase;
+      color: red;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    &.square {
+      margin: 0.5rem auto 1rem auto;
+      padding: 1rem 1rem;
+      border: 10px solid red;
+    }
+
+    &:hover {
+      color: #f90;
+      border-color: #f90;
+    }
+  }
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/*
+// Box Shadow Placeholer and Class
+// -- Placeholder -- box shadow default
+%box-shadow {
+  box-shadow: 0 0 18px -3px rgba(143, 143, 143, 0.5);
+}
+%box-shadow-hover {
+  box-shadow: 0 0 20px -3px rgba(143, 143, 143, 0.75);
+}
+// -- Placeholder -- box shadow dark
+%box-shadow-dark {
+  box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, 0.25);
+}
+%box-shadow-dark-hover {
+  box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, 0.75);
+} */
+
+.promotion {
+  &-promo {
+    transition: 0.25s linear;
+    text-decoration: line-through;
+    color: $color-warning;
+    font-family: $h-font;
+    font-size: 1.15rem;
+    font-weight: $default-font-weight-bold;
+  }
+  &-price {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 92px;
+    height: 92px;
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+    transition: 0.25s linear;
+    transform: translate(5px, 27.5px) rotate(-9deg);
+    text-align: center;
+    color: $color-1-bg;
+    border: 1px dashed $color-1-bg;
+    border-radius: 5rem;
+    background: $color-warning;
+    font-family: $h-font;
+    font-size: 1.1rem;
+    font-weight: $default-font-weight-bold;
+    line-height: 1.15;
+    &-desc {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    &-text {
+      margin: 0 auto;
+      padding: 0;
+      font-weight: $default-font-weight-bolder;
+    }
+  }
+}
+
+.card-animate {
+  counter-reset: section;
+  .card-body {
+    &:before {
+      position: absolute;
+      z-index: 0;
+      bottom: 5rem;
+      left: -0.85rem;
+      display: block;
+      margin: 0;
+      padding: 0;
+      content: "" counter(section) "";
+      counter-increment: section;
+      transition: 0.5s ease;
+      color: rgb(0 0 0 / 10%);
+      font-size: 15rem;
+      font-weight: 900;
+      line-height: 0;
+    }
+  }
+}

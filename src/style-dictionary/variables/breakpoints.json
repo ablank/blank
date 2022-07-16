@@ -1,0 +1,23 @@
+{
+  "breakpoint": {
+    "unit": {
+      "category": "unit",
+      "ivalue": "px"
+    },
+    "small": {
+      "category": "mediaquery",
+      "ivalue": "500",
+      "comment": "Styles for mobile devices."
+    },
+    "narrow": {
+      "category": "mediaquery",
+      "ivalue": "960",
+      "comment": "Styles for tablets."
+    },
+    "default": {
+      "category": "mediaquery",
+      "ivalue": "1600",
+      "comment": "Styles for most laptop & desktop computers. Anything greater than this breakpoint is considered 'large'"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+/**
+  * @file
+  * General styling for icons.
+*/
+
+/* Set true' or 'false' to include or exclude entire icon group. */
+$use_ui_icons: true;
+$use_social_icons: true;
+$use_tech_icons: false;
+
+.icon {
+  display: inline;
+  display: inline-block;
+  width: $icon_size;
+  height: $icon_size;
+  padding: 0 0 0 ($icon_size * 1.1);
+  vertical-align: middle;
+  background-color: none;
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: $icon_size;
+
+  &:hover {
+    border-color: $color-hilight;
+  }
+
+  &.search {
+    text-indent: 0;
+  }
+}
+
+@each $icon in $icon-list {
+  .icon.#{$icon} {
+    @include icon($icon);
+  }
+}

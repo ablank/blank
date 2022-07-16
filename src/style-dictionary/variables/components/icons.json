@@ -1,0 +1,158 @@
+{
+  "icon": {
+    "src": {
+      "svg": {
+        "value": "'../assets/icons/svg/'"
+      },
+      "png": {
+        "value": "'../assets/icons/png/'"
+      }
+    },
+    "size": {
+      "value": "{default.size.value}"
+    },
+    "bg": {
+      "value": "{color.secondary.value}"
+    },
+    "border": {
+      "value": "{default.border.value}"
+    },
+    "border-radius": {
+      "value": "50%"
+    },
+    "list": {
+      "comment": "List of icons/classes to actually include in style",
+      "value": [
+        "arrow-up",
+        "arrow-right",
+        "arrow-down",
+        "arrow-left",
+        "mail",
+        "menu",
+        "message-error",
+        "message-ok",
+        "message-warning",
+        "email",
+        "home",
+        "search",
+        "facebook",
+        "instagram",
+        "twitter",
+        "twitter-t",
+        "github-octo",
+        "google",
+        "youtube",
+        "linkedin",
+        "reddit"
+      ]
+    },
+    "options": {
+      "ui": {
+        "comment": "List of available user interface icons/classes",
+        "values": [
+          "arrow-up",
+          "arrow-right",
+          "arrow-down",
+          "arrow-left",
+          "mail",
+          "mail2",
+          "menu",
+          "message-error",
+          "message-ok",
+          "message-warning",
+          "audio",
+          "camera",
+          "cart",
+          "chat",
+          "cloud",
+          "doc",
+          "email",
+          "eye",
+          "film",
+          "folder",
+          "gear",
+          "heart",
+          "home",
+          "key",
+          "lock",
+          "minus",
+          "pdf",
+          "phone",
+          "phone2",
+          "picture",
+          "plus",
+          "print",
+          "rss",
+          "search",
+          "spreadsheet",
+          "star",
+          "user",
+          "user-social",
+          "video",
+          "wrench",
+          "zip"
+        ]
+      },
+      "tech": {
+        "comment": "List of tech icons/classes",
+        "values": [
+          "android",
+          "angular",
+          "apple",
+          "creativecommons",
+          "chrome",
+          "css3",
+          "desktop",
+          "drupal",
+          "firefox",
+          "globe",
+          "html5",
+          "internetexplorer",
+          "jquery",
+          "js",
+          "laptop",
+          "linux",
+          "mac",
+          "mobile",
+          "opera",
+          "safari",
+          "stackoverflow",
+          "w3",
+          "windows",
+          "wordpress"
+        ]
+      },
+      "social": {
+        "comment": "List of social network icons/classes",
+        "values": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "twitter-t",
+          "github-octo",
+          "google",
+          "youtube",
+          "linkedin",
+          "reddit",
+          "behance",
+          "blogger",
+          "delicious",
+          "deviantart",
+          "digg",
+          "flickr",
+          "grooveshark",
+          "hi5",
+          "myspace",
+          "pinterest",
+          "skype",
+          "slashdot",
+          "soundcloud",
+          "stumbleupon",
+          "technorati",
+          "tumblr",
+          "yelp"
+        ]
+      }
+    }
+  }
+}

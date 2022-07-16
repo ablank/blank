@@ -1,0 +1,9 @@
+{
+    "animation": {
+      "speed": {
+        "value": "{speed.value}"
+      },
+      "easing": {
+        "value": "ease"
+      }
+    }}

@@ -1,0 +1,25 @@
+/**
+  * @file
+  * Anchors / Links
+*/
+a {
+  /* display: inline-block; */
+  @include transition();
+
+  text-decoration: none;
+  color: $ch1;
+  outline: none;
+  background-repeat: no-repeat;
+
+  &:visited {
+    color: $ch3;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    color: $ch2;
+    outline: none;
+  }
+}

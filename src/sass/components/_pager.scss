@@ -1,0 +1,57 @@
+/**
+  * @file
+  * Pager styling
+*/
+.pager {
+  display: table;
+  clear: both;
+  margin: 0.4em auto;
+  padding: 0;
+  text-align: center;
+  font: bold 0.8em/1em;
+
+  li {
+    float: left;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    outline: 0;
+  }
+
+  a {
+    @include button($color-2-bg, $color-2-bg);
+
+    &:hover,
+    &:focus {
+      color: $color-1-bg;
+      background: $color-1;
+    }
+  }
+
+  .pager-item {
+    margin: 0.2em;
+  }
+
+  .pager-current {
+    margin: -0.5em 0.6em 0;
+    padding: $default-size;
+    cursor: default;
+    color: $color-2;
+    border: $default-border;
+    outline: 0;
+    background: $color-1-bg;
+    font-weight: bold;
+  }
+}
+
+.pager-first,
+.pager-previous,
+.pager-next,
+.pager-last {
+  margin: 0.2em;
+  border: none;
+
+  a {
+    width: 4em;
+  }
+}

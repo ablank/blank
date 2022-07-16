@@ -1,0 +1,52 @@
+{
+  "color": {
+    "primary": {
+      "value": "{swatch.black}",
+      "category": "color"
+    },
+    "primary-bg": {
+      "value": "{swatch.white}",
+      "category": "color"
+    },
+    "secondary": {
+      "value": "{swatch.white}",
+      "category": "color"
+    },
+    "secondary-bg": {
+      "value": "{swatch.dark-grey}",
+      "category": "color"
+    },
+    "tertiary": {
+      "value": "{swatch.dark-grey}",
+      "category": "color"
+    },
+    "tertiary-bg": {
+      "value": "{swatch.cream}",
+      "category": "color"
+    },
+    "hilight": {
+      "value": "{swatch.cyan}",
+      "category": "color"
+    },
+    "shadow": {
+      "value": "{swatch.dark-grey}",
+      "category": "color"
+    },
+    "neutral": {
+      "value": "{swatch.grey}",
+      "category": "color"
+    },
+    "error": {
+      "value": "{swatch.red}",
+      "category": "color"
+    },
+    "warning": {
+      "value": "{swatch.yellow}",
+      "category": "color"
+    },
+    "success": {
+      "value": "{swatch.green}",
+      "category": "color"
+    }    
+  }
+}

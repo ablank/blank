@@ -1,0 +1,19 @@
+/**
+  * @file
+  * Fonts
+*/
+@font-face {
+  font-family: Quicksand;
+  src: local("Quicksand Regular"), local("Quicksand-Regular"),
+    url("/dist/assets/fonts/Quicksand.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: local("Quicksand Bold"), local("Quicksand-Bold"),
+    url("/dist/assets/fonts/Quicksand-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

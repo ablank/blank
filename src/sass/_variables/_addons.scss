@@ -1,0 +1,46 @@
+/**
+* @file
+* Add derivative variables using sass functions based on style-dictionary.
+*/
+
+/* Variable aliases */
+$color-1: $color-primary;
+$color-1-bg: $color-primary-bg;
+$color-1-l: lighten($color-1, 10%);
+$color-1-d: darken($color-1, 10%);
+
+$color-2: $color-secondary;
+$color-2-bg: $color-secondary-bg;
+$color-2-l: lighten($color-1, 10%);
+$color-2-d: darken($color-1, 10%);
+
+$color-3: $color-tertiary;
+$color-3-bg: $color-tertiary-bg;
+$color-3-l: lighten($color-1, 10%);
+$color-3-d: darken($color-1, 10%);
+
+$ch1: $color-hilight;
+$ch2: lighten($ch1, 15%);
+$ch3: lighten($ch1, 5%);
+
+/* Define background-color based on primary color. */
+//$color-primary-bg: contrast($color-primary);
+
+/* Cell grid spacing- % will be appended */
+$cell_space: calc(($grid-cell-margin + $grid-cell-padding) * 2);
+
+/* cells & offsets populated by looping through grid values. */
+$cells: (".cell");
+$offsets: ();
+
+/* Generate list of grid class names based on % size */
+@each $cell in $grid-cells {
+  $cell: round($cell);
+  $cells: append($cells, unquote(".cell-#{$cell}"), comma);
+  $offsets: append($offsets, unquote(".offset-#{$cell}"), comma);
+}
+
+/* Header region */
+$header-height: calc($logo-height + ($logo-padding * 2) + ($logo-margin * 2));
+
+$default-image: unquote($icon-src-png) + unquote($default-image);

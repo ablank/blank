@@ -1,0 +1,16 @@
+{
+  "region": {    
+    "margin": {
+      "value": "0"
+    },
+    "padding": {
+      "value": "0"
+    },
+    "border": {
+      "value": "0"
+    },
+    "min-height": {
+      "value": "3{default.unit.value}"
+    }
+  }
+}

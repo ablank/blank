@@ -1,0 +1,27 @@
+/**
+  * @file
+  * Content region styles
+*/
+
+#footer {
+  z-index: 1;
+  margin: 5em 0 0 0;
+  color: $color-1-bg;
+  background: $color-2-bg;
+}
+
+#footer-top,
+#footer-bottom {
+  color: $color-2;
+  border-bottom: $default-border;
+  background: $color-2-bg;
+  font-size: $size-small;
+
+  /* Custom type for region */
+}
+
+.copyright {
+  display: block;
+  padding: $size-small $size-big $size-small;
+  text-align: right;
+}

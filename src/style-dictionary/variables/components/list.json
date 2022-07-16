@@ -1,0 +1,19 @@
+{
+  "list": {
+    "margin": {
+      "value": "1em"
+    },
+    "padding": {
+      "value": "0.5em"
+    },
+    "style-ul": {
+      "value": "disc"
+    },
+    "style-ul-img": {
+      "value": "arrow-right"
+    },
+    "style-ol": {
+      "value": "none"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "position": {
+      "value": "0.1rem"
+    },
+    "size": {
+      "value": "{default.size.value}"
+    },
+    "dropdown": {
+      "show": {
+        "value": "true"
+      },
+      "direction": {
+        "value": "left"
+      }
+    }
+  }
+}
