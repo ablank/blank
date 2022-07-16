@@ -14,7 +14,7 @@
     "url": "https://github.com/ablank/blank"
   },
   "scripts": {
-    "clean:assets": "rimraf dist/assets",
+    "clean:assets": "rimraf dist/assets/**/*",
     "clean:css": "rimraf dist/css",
     "clean:js": "rimraf dist/js",
     "clean": "rimraf dist/**/*",
