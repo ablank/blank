@@ -45,7 +45,6 @@ StyleDictionary.registerFormat({
 /**
  * Build
  */
-
 StyleDictionary.extend(
   path.resolve(dirDictionary, '_config.json'),
 ).buildAllPlatforms();

@@ -24,7 +24,7 @@ const createDir = (pathname) => {
       if (e) {
         err(e);
       } else {
-        console.log(`\n Creating directory: ${pathname}\n`);
+        console.log(` Creating directory: ${pathname}`);
       }
     });
   } catch (e) {
@@ -65,7 +65,7 @@ const processFavicons = () => {
       .resize(size)
       .png(pngOpts)
       .toFile(path.join(distFaviconDir, `apple-touch-icon-${size}.png`))
-      .then(console.log(`apple-touch-icon-${size}.png created\n`))
+      .then(console.log(`apple-touch-icon-${size}.png created`))
       .catch((e) => err(e));
   });
 
@@ -74,7 +74,7 @@ const processFavicons = () => {
       .resize(size)
       .png(pngOpts)
       .toFile(path.join(distFaviconDir, `favicon-${size}.png`))
-      .then(console.log(`favicon-${size}.png created\n`))
+      .then(console.log(`favicon-${size}.png created`))
       .catch((e) => err(e));
   });
 
@@ -82,7 +82,7 @@ const processFavicons = () => {
     .resize(16)
     .png(pngOpts)
     .toFile(path.join(distFaviconDir, 'favicon.ico'))
-    .then(console.log('favicon.ico created\n'))
+    .then(console.log('favicon.ico created'))
     .catch((e) => err(e));
 };
 

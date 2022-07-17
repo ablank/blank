@@ -2,13 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const glob = require('glob');
 const postcss = require('postcss');
-const config = require('./postcss.config');
+const config = require('./.postcss');
 const cssnano = require('cssnano')(config.plugins.cssnano);
 const sort = require('postcss-sorting')(config.plugins.sorting);
 const reporter = require('postcss-reporter')(config.plugins.reporter);
 const autoprefixer = require('autoprefixer')(config.plugins.autoprefixer);
 const mediaquery = require('postcss-combine-media-query');
-const stylelint = require('stylelint')(require('./.stylelintrc.json'));
 
 const distDir = path.resolve(__dirname, '..', '..', 'dist', 'css');
 
@@ -48,11 +47,12 @@ const mincss = async (asset) => {
 const processCss = async (asset) => {
   const srcFile = `${path.resolve(distDir, asset)}`;
   await fs.readFile(srcFile, (e, css) => {
-    postcss([autoprefixer, mediaquery, sort, stylelint, reporter])
+    postcss([autoprefixer, mediaquery, sort, reporter])
       .process(css, {
         from: srcFile,
       })
       .then((result) => {
+        console.log(`${srcFile} optimized`);
         fs.writeFile(srcFile, result.css, () => true);
         if (result.map) {
           fs.writeFile(`${srcFile}.map`, result.map.toString(), () => true);
