@@ -7,7 +7,7 @@ const cssnano = require('cssnano')(config.plugins.cssnano);
 const sort = require('postcss-sorting')(config.plugins.sorting);
 const reporter = require('postcss-reporter')(config.plugins.reporter);
 const autoprefixer = require('autoprefixer')(config.plugins.autoprefixer);
-const stylelint = require('stylelint')(config.plugins.stylelint);
+const stylelint = require('stylelint')(require('./.stylelintrc.json'));
 
 const distDir = path.resolve(__dirname, '..', '..', 'dist', 'css');
 
@@ -21,7 +21,10 @@ const err = (e, callback) => {
 
 const mincss = async (asset) => {
   const srcFile = `${path.resolve(distDir, asset)}`;
-  const distFile = `${path.resolve(distDir, asset.replace(/.css/, '.min.css')  )}`;
+  const distFile = `${path.resolve(
+    distDir,
+    asset.replace(/.css/, '.min.css'),
+  )}`;
 
   try {
     await fs.readFile(srcFile, (error, css) => {
@@ -44,7 +47,7 @@ const mincss = async (asset) => {
 const processCss = async (asset) => {
   const srcFile = `${path.resolve(distDir, asset)}`;
   await fs.readFile(srcFile, (e, css) => {
-    postcss([autoprefixer, sort, reporter])
+    postcss([autoprefixer, sort, stylelint, reporter])
       .process(css, {
         from: srcFile,
       })
@@ -59,12 +62,7 @@ const processCss = async (asset) => {
   });
 };
 
-glob(
-  '**/*.css',
-  {
-    cwd: distDir,
-    noext: 'min.css',
-  },
+glob('**/*.css', {cwd: distDir, ignore: '**/*.min.css'},
   (e, files) => {
     err(e, () => {
       files.forEach((stylesheet) => {

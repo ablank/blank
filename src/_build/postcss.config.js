@@ -3,10 +3,10 @@ module.exports = {
   plugins: [
     require('precss'),
     require('autoprefixer')({
-      Browserslist: ['last 5 versions'],
+      Browserslist: ['last 5 versions']
     }),
     require('cssnano')({
-      preset: 'default',
+      preset: 'default'
     }),
     require('postcss-sorting')({
       order: [
@@ -17,13 +17,10 @@ module.exports = {
         'rules',
       ],
       'properties-order': 'alphabetical',
-      'unspecified-properties-position': 'bottom',
+      'unspecified-properties-position': 'bottom'
     }),
     require('postcss-reporter')({
-      clearReportedMessages: true,
-    }),
-    require('stylelint')({
-      extends: './stylelintrc.json',
+      clearReportedMessages: true
     })
   ]
 };

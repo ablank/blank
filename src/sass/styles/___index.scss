@@ -12,7 +12,7 @@
 @import "base_tables";
 @import "base_forms";
 @import "base_media";
-@import "base_grid";
+@import "cellular-grid";
 @import "base_animations";
 @import "region-wrappers";
 @import "region-console";
@@ -20,7 +20,8 @@
 @import "region-footer";
 @import "region-header";
 @import "region-sidebar";
-@import "_decor";
-@import "_logo";
+@import "cellular-decor";
+@import "cellular-typography";
 @import "_typography";
+@import "_logo";
 @import "_style";

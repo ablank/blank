@@ -1,18 +1,6 @@
 # blank
 
-A seed project for developing with NodeJS.
-
-- Compile sass to css
-
-- Minify css
-
-- Beautify & minify js
-
-- Create png icons/favicons from svg source
-
-- Optimize images
-
-Git this repo and `npm install` to run the initial build, then `npm run` any the following commands:
+A seed project for development. Git and `npm install` this repo, then `npm run` any the following commands:
 
 - `build`: Remove all /dist files and regenerate all files from /src
 - `build:style-dictionary`: Regenerate style-dictionary{.json,.scss,.yml} files from /src/style-dictionary

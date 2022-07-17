@@ -5,9 +5,8 @@
     "stylelint-group-selectors"
   ],
   "syntax": "css",
-  "output-file": "./dist/css/lint.txt",
   "ignoreFiles": [
-    "**/*/vendor/**/*.css"
+    "**/*.min.css"
   ],
   "rules": {
     "plugin/stylelint-group-selectors": true,

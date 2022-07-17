@@ -1,3 +1,8 @@
+/**
+  * @file
+  * Custom typography
+*/
+
 /*
 @font-face {
   font-family: heading;
@@ -8,27 +13,3 @@
   src: url();
 }
 */
-.xxl {
-  font-size: $size-xxl;
-}
-.xl {
-  font-size: $size-xl;
-}
-.big {
-  font-size: $size-big;
-}
-.small {
-  font-size: $size-small;
-}
-.tiny {
-  font-size: $size-tiny;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}

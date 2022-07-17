@@ -9,24 +9,8 @@
     "es6": true,
     "node": true
   },
-  "globals": {
-    "Drupal": true,
-    "drupalSettings": true,
-    "drupalTranslations": true,
-    "jQuery": true,
-    "_": true,
-    "Cookies": true,
-    "Backbone": true,
-    "Modernizr": true,
-    "Popper": true,
-    "Sortable": true,
-    "CKEDITOR": true
-  },
-  "settings": {
-    "react": {
-      "version": "latest"
-    }
-  },
+  "ignorePatterns": ["**/*.min.js"],
+  "settings": {},
   "rules": {
     "prettier/prettier": "error",
     "consistent-return": ["off"],
