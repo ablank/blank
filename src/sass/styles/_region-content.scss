@@ -3,9 +3,15 @@
   * Content region styles
 */
 
-#content {
-  z-index: 1;
+
+article,
+#content,
+.content {
   background: $c1-bg;
+  z-index: 2;
+}
+
+#content {
 }
 
 #content-top {

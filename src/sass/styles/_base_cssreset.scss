@@ -2,8 +2,19 @@
   * @file
   * CSS Reset
 */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
 body,
 div,
+span,
 p,
 h1,
 h2,

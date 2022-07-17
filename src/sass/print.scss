@@ -6,6 +6,7 @@
 @import "variables";
 
 @media print {
+
   img,
   p {
     page-break-inside: avoid;
@@ -32,15 +33,17 @@
       content: " (" attr(href) ")";
     }
   }
-  code a:after {
-    content: none;
-  }
 
   pre,
   code,
   blockquote {
     border: 1px solid $c2;
     page-break-inside: avoid;
+  }
+
+  pre,
+  code a:after {
+    content: none;
   }
 
   #app,

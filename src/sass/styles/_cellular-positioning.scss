@@ -1,0 +1,27 @@
+/**
+  * @file
+  * Element positioning classes
+*/
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+.clearfix {
+  @include clear();
+}
+.left,
+.right,
+.center {
+  display: block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  float: none;
+  @include clear();
+  margin: $grid-cell-margin + unquote("%") auto;
+}

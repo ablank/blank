@@ -1,0 +1,15 @@
+/**
+  * @file
+  * Grid layouts
+*/
+
+.grid {
+  display: grid;
+  grid-auto-rows: 140px;
+  grid-auto-flow: row;
+
+  &.3x2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
