@@ -4,40 +4,23 @@
 */
 
 /* Variable aliases */
-$ch: $color-hilight;
-$c1: $color-primary;
-$c1-bg: $color-primary-bg;
-$c2: $color-secondary;
-$c2-bg: $color-secondary-bg;
-$c3: $color-tertiary;
-$c3-bg: $color-tertiary-bg;
+$hilight: $color-hilight;
+$dark: $color-primary;
+$dark-bg: $color-primary-bg;
+$light: $color-secondary;
+$light-bg: $color-secondary-bg;
+$grey: $color-neutral;
+$adjust: 25%;
 
 /* Variable extensions */
-$c1-light: lighten($c1, 10%);
-$c1-dark: darken($c1, 10%);
+$dark-light: lighten($dark, $adjust);
+$dark-dark: darken($dark, $adjust);
 
-$c2-light: lighten($c1, 10%);
-$c2-dark: darken($c1, 10%);
+$light-light: lighten($dark, $adjust);
+$light-dark: darken($dark, $adjust);
 
-$c3-light: lighten($c1, 10%);
-$c3-dark: darken($c1, 10%);
+$grey-light: lighten($dark, $adjust);
+$grey-dark: darken($dark, $adjust);
 
-$ch-light: lighten($ch, 15%);
-$ch-dark: lighten($ch, 5%);
-
-/* Cell grid spacing- % will be appended */
-$cell-space: calc(($grid-cell-margin + $grid-cell-padding) * 2);
-
-/* cells & offsets populated by looping through grid values. */
-$cells: (".cell");
-$offsets: ();
-
-/* Generate list of names used in grid classes based on % size specified in style-dictionary */
-@each $cell in $grid-cells {
-  $cell: round($cell);
-  $cells: append($cells, unquote(".cell-#{$cell}"), comma);
-  $offsets: append($offsets, unquote(".offset-#{$cell}"), comma);
-}
-
-/* Header region */
-$header-height: calc($logo-height + ($logo-padding * 2) + ($logo-margin * 2));
+$hilight-light: lighten($hilight, $adjust);
+$hilight-dark: lighten($hilight, $adjust);

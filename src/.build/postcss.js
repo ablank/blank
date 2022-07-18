@@ -8,6 +8,7 @@ const sort = require('postcss-sorting')(config.plugins.sorting);
 const reporter = require('postcss-reporter')(config.plugins.reporter);
 const autoprefixer = require('autoprefixer')(config.plugins.autoprefixer);
 const mediaquery = require('postcss-combine-media-query');
+const combineSelect = require('postcss-combine-duplicated-selectors');
 
 const distDir = path.resolve(__dirname, '..', '..', 'dist', 'css');
 
@@ -47,7 +48,7 @@ const mincss = async (asset) => {
 const processCss = async (asset) => {
   const srcFile = `${path.resolve(distDir, asset)}`;
   await fs.readFile(srcFile, (e, css) => {
-    postcss([autoprefixer, mediaquery, sort, reporter])
+    postcss([autoprefixer, mediaquery, combineSelect, sort, reporter])
       .process(css, {
         from: srcFile,
       })

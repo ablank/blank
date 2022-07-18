@@ -6,6 +6,9 @@
       },
       "height": {
         "value": "{logo.height.value}"
+      },
+      "color": {
+        "value": "{swatch.black}"
       }
     }
   }

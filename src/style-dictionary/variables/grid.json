@@ -26,6 +26,12 @@
       "comment": "A key:value list of cell sizes to set grid scaling as % of parent element"
     },
     "cell": {
+      
+      "space": {
+        "value": "1em",
+        "category": "grid",
+        "comment": "Space between grid cells"
+      },
       "margin": {
         "value": "0",
         "category": "grid",

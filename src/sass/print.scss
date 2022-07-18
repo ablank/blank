@@ -6,7 +6,6 @@
 @import "variables";
 
 @media print {
-
   img,
   p {
     page-break-inside: avoid;
@@ -27,9 +26,9 @@
   a,
   a:visited {
     text-decoration: underline;
-    color: $ch;
+    color: $hilight;
 
-    &:after {
+    &::after {
       content: " (" attr(href) ")";
     }
   }
@@ -37,12 +36,12 @@
   pre,
   code,
   blockquote {
-    border: 1px solid $c2;
+    border: 1px solid $light;
     page-break-inside: avoid;
   }
 
   pre,
-  code a:after {
+  code a::after {
     content: none;
   }
 

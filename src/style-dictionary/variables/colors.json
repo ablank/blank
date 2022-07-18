@@ -1,4 +1,20 @@
 {
+  "swatch": {
+    "white":{"value": "#fefefe"},
+    "black": {"value":"#101010"},
+    "grey": {"value":"#abaaa6"},
+    "red": {"value":"#8c0d00"},
+    "green": {"value":"#61d43f"},
+    "blue": {"value":"#00598e"},
+    "cyan": {"value":"#29b4de"},
+    "magenta": {"value":"#dd2a99"},
+    "yellow": {"value":"#ec2"},
+    "orange": {"value":"#ff6200"},
+    "purple": {"value":"#bc00ff"},
+    "cream": {"value":"#fffbf0"},
+    "sand": {"value":"#eedeb8"},
+    "sage": {"value":"#86b082"}
+},
   "color": {
     "primary": {
       "value": "{swatch.black}",
@@ -13,11 +29,11 @@
       "category": "color"
     },
     "secondary-bg": {
-      "value": "{swatch.dark-grey}",
+      "value": "{swatch.grey}",
       "category": "color"
     },
     "tertiary": {
-      "value": "{swatch.dark-grey}",
+      "value": "{swatch.grey}",
       "category": "color"
     },
     "tertiary-bg": {
@@ -29,7 +45,7 @@
       "category": "color"
     },
     "shadow": {
-      "value": "{swatch.dark-grey}",
+      "value": "{swatch.grey}",
       "category": "color"
     },
     "neutral": {

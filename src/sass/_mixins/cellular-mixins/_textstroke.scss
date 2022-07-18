@@ -1,4 +1,0 @@
-@mixin textstroke($color: $c1-bg, $size: 1px) {
-  text-shadow: -$size -$size 0 $color, $size -$size 0 $color,
-    -$size $size 0 $color, $size $size 0 $color;
-}

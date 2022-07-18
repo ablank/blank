@@ -32,11 +32,12 @@
     "build:js": "run-s clean:js js:*",
     "build:assets": "run-s clean:assets && node src/.build/imagemin.mjs && run-p favicons icons",
     "build": "run-s build:*",
+    "postinstall": "run-s build",
     "watch:sass": "onchange \"src/sass\" -- run-s sass",
     "watch:js": "onchange \"src/js\" -- run-s js:beautify",
     "watch:images": "onchange \"src/assets/images\" -- run-s build:images || onchange \"src/assets/icons\" -- run-s build:icons",
     "watch": "run-p watch:*",
-    "postinstall": "run-p build watch"
+    "script": "node src/.build/_custom-build.js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
@@ -48,6 +49,7 @@
     "imagemin-svgo": "^10.0.1",
     "lodash": "^4.17.21",
     "postcss": "^8.4.14",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-combine-media-query": "^1.0.1",
     "postcss-reporter": "^7.0.5",
     "postcss-scss": "^4.0.4",

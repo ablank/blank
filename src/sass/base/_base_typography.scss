@@ -1,0 +1,135 @@
+/**
+  * @file src\sass\styles\_base_typography.scss
+  * Typography
+*/
+hr {
+  height: 1px;
+  margin: $p-size 0;
+  border: none;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba($color-neutral, 0),
+      rgba($color-neutral, 0.75),
+      rgba($color-neutral, 0)
+    );
+}
+
+p {
+  display: block;
+  max-width: $p-max-width;
+  margin: 0 auto;
+  padding: 0 $default-size ($p-line-height * 0.5);
+  color: $p-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  clear: both;
+  margin: 1em auto 0.2em;
+  padding: 0.4em 0.4em 0 1em;
+  font-family: $h-font;
+  font-weight: $h-weight;
+  line-height: 1.1em;
+}
+
+h1 {
+  margin: 0;
+  padding: 1.4em 1em 0.8em;
+  text-align: center;
+  color: $h-color;
+  border: none;
+  font-size: $h-size;
+}
+
+h2 {
+  color: $h-color;
+  font-size: $h-size * 0.8;
+}
+
+h3 {
+  color: $h-color;
+  font-size: $h-size * 0.7;
+}
+
+small {
+  font-size: $size-small;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: $p-size * 0.75;
+  line-height: 0;
+}
+
+sup {
+  top: -($p-size * 0.5);
+}
+
+sub {
+  bottom: -($p-size * 0.25);
+}
+
+blockquote,
+q {
+  color: $light;
+  background-color: $light-bg;
+  font-style: italic;
+
+  &::before {
+    content: "\201C";
+  }
+
+  &::after {
+    content: "\201D";
+  }
+}
+
+q {
+  font-size: $p-size * 1.4;
+}
+
+blockquote {
+  display: block;
+  margin: $size-nano $size-big;
+  padding: $default-size;
+  border-left: $size-nano solid;
+  font-size: $p-size * 1.8;
+}
+
+caption {
+  text-align: left;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+  display: block;
+  overflow: scroll;
+  margin: 1em auto;
+  padding: 1em;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.testing {
+  font:bold;
+}

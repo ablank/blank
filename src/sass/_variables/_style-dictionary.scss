@@ -1,7 +1,7 @@
 /*
   DO NOT EDIT DIRECTLY
   @see src/style-dictionary/variables/
-  Generated on Sun, 17 Jul 2022 08:23:54 GMT
+  Generated on Mon, 18 Jul 2022 07:56:37 GMT
 */
 
 $default-unit: rem;
@@ -19,13 +19,13 @@ $default-border: 1px solid #fefefe;
 $default-border-style: 1px solid;
 $default-border-radius: 0.5rem;
 $default-image: happy;
-$default-offset: inset 0 0 0.3em 0 #555;
+$default-offset: inset 0 0 0.3em 0 #abaaa6;
 $default-transition-property: all;
-$default-transition-duration: 1s;
+$default-transition-duration: 400ms;
 $default-transition-timing: ease;
-$default-transition-delay: false;
-$default-box-shadow: 0.5rem 0.5rem 0.5rem 1px #101010;;
-$default-drop-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #101010;;
+$default-transition-delay: 0ms;
+$default-boxshadow: 0.5rem 0.5rem 0.5rem 1px #101010;;
+$default-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #101010;;
 $adjust-default: 25%;
 $adjust-abit: 10%;
 $adjust-bigly: 40%;
@@ -35,22 +35,38 @@ $alpha-end: 1;
 $alpha-offset: 0.2;
 $animation-speed: 500ms;
 $animation-easing: ease;
+$region-footer-color: #101010;
 $region-header-position: fixed;
 $region-header-height: 96px;
+$region-header-color: #101010;
 $region-sidebar-width: 27%;
 $region-margin: 0;
 $region-padding: 0;
 $region-border: 0;
 $region-min-height: 3rem;
+$swatch-white: #fefefe;
+$swatch-black: #101010;
+$swatch-grey: #abaaa6;
+$swatch-red: #8c0d00;
+$swatch-green: #61d43f;
+$swatch-blue: #00598e;
+$swatch-cyan: #29b4de;
+$swatch-magenta: #dd2a99;
+$swatch-yellow: #ec2;
+$swatch-orange: #ff6200;
+$swatch-purple: #bc00ff;
+$swatch-cream: #fffbf0;
+$swatch-sand: #eedeb8;
+$swatch-sage: #86b082;
 $color-primary: #101010;
 $color-primary-bg: #fefefe;
 $color-secondary: #fefefe;
-$color-secondary-bg: #555;
-$color-tertiary: #555;
+$color-secondary-bg: #abaaa6;
+$color-tertiary: #abaaa6;
 $color-tertiary-bg: #fffbf0;
 $color-hilight: #29b4de;
-$color-shadow: #555;
-$color-neutral: #bbbab7;
+$color-shadow: #abaaa6;
+$color-neutral: #abaaa6;
 $color-error: #8c0d00;
 $color-warning: #ec2;
 $color-success: #61d43f;
@@ -85,6 +101,8 @@ $distance-offset: 10%;
 $grid-flex: true;
   // A key:value list of cell sizes to set grid scaling as % of parent element
 $grid-cells: 100,90,80,75,70,66.666666,60,50,40,33.333333,30,25,20,10;
+  // Space between grid cells
+$grid-cell-space: 1em;
   // Single value margin size that will be applied to grid cells
 $grid-cell-margin: 0;
   // Single value padding size that will be applied to grid cells

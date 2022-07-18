@@ -1,5 +1,0 @@
-@mixin mediaquery($mediaquery: "") {
-  @media #{$mediaquery} {
-    @content;
-  }
-}

@@ -2,10 +2,8 @@
 * SASS Configuration Variables
 ***/
 
-
 /* Import variables as defined in style-dictionary and mixins/libraries (i.e. bourbon, etc.) */
-@import "_mixins/__index";
+@import "_lib/__index";
 @import "_variables/__index";
 
 /** Define custom vars here, create/update style dictionary entries as needed **/
-

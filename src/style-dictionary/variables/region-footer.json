@@ -1,6 +1,9 @@
 {
   "region": {
     "footer": {
+      "color": {
+        "value": "{swatch.black}"
+      }
     }
   }
 }

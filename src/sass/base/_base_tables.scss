@@ -1,0 +1,44 @@
+/** 
+  * @file src\sass\styles\_base_tables.scss
+  * Tables
+*/
+$table_border: $color-neutral 1px solid;
+$cell_border: $light 1px solid;
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  img {
+    display: inline;
+    padding: 0;
+  }
+}
+
+th,
+thead {
+  text-align: center;
+  color: $light;
+  border: $cell_border;
+  font-family: $h-font;
+  font-size: $default-size;
+  font-weight: $h-weight;
+}
+
+tr:nth-child(even) {
+  background: darken($dark-bg, 5%);
+}
+
+tr:nth-child(odd) {
+  background: $dark-bg;
+}
+
+td {
+  padding: $size-nano;
+  border: $cell_border;
+}
+
+tfoot {
+  text-align: center;
+  font-style: italic;
+}
